@@ -68,9 +68,10 @@ image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_au
 category:"Trending Near You",
 time:"2h 7m",
 sub_category:"Action",
-type:"Thriller"},
+type:"Thriller"}]
 
-{title:"Tripling Season 3",
+//---Latest & Trending---//
+var latest=[{title:"Tripling Season 3",
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5230436/portrait/1920x770cd5550fd6fe64ed19f73339697501913a1ebe2567d824021883c08f193544046.jpg",
 category:"Latest & Trending",
 time:"2h 7m",
@@ -129,10 +130,10 @@ image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_au
 category:"Latest & Trending",
 time:"2h 7m",
 sub_category:"Action",
-type:"Thriller"},
+type:"Thriller"},]
 
 //---top 10 movies of India---//
-{title:"Love Hostel",
+var top10=[{title:"Love Hostel",
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z595840/portrait/1920x7705d9c7a86295d4f268cd4c7deb387d9b8.jpg",
 category:"Top 10 Movies in India",
 time:"2h 7m",
@@ -194,6 +195,184 @@ sub_category:"Action",
 type:"Thriller"}
 ]
 
+ //---Trending TV Shows---//
+var tvshowshome=[{id:1,title:"Meet",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3510/portrait/1920x7707d4b3b50908043d0b5a3087c802ad17d.jpg",
+category:"TV-Shows",
+sub_category:"Zee TV Shows"},
+{id:2,title:"Kumkum Bhagya",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-127/portrait/1920x770e54d0c02f6cb4944a1e2824a623c2a4b.jpg",
+category:"TV-Shows",
+sub_category:"Zee TV Shows"},
+{id:3,title:"Kundali Bhagya",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-366/portrait/1920x770017822e83c8c4f2f95aac896902b71be.jpg",
+category:"TV-Shows",    
+sub_category:"Zee TV Shows"},
+{id:4,title:"Bhagya Lakshmi",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3392/portrait/1920x7707680c95e70a24006bd090c775c8000f5.jpg",
+category:"TV-Shows",
+sub_category:"Zee TV Shows"},
+{id:5,title:"Pyar Ka Pehla Naam:Radhe Mohan",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5130241/portrait/1920x770a91cb4072ee24745a47ead594735fff4.jpg",
+category:"TV-Shows",
+sub_category:"Zee TV Shows"},
+{id:6,title:"Main Hoon Aparajita",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5214664/portrait/1920x770d2c3aa3ff6c047d3a965f082c583b943.jpg",
+category:"TV-Shows",
+sub_category:"Zee TV Shows"},
+{id:7,title:"Sanjog",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5185799/portrait/1920x77004de2cd79f82495680306538cb155cae.jpg",
+category:"TV-Shows",
+sub_category:"Zee TV Shows"},
+{id:8,title:"Mithai",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5101301/portrait/1920x770910a9ef38ddd4048b010e71666000049f46baafce9f64b74b19f0e9804a0911e.jpg",
+category:"TV-Shows",
+sub_category:"Zee TV Shows"},
+{id:9,title:"Tere Bin Jiya Jaye Na",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z525220/portrait/1920x770787ca3eff34e46dc8591e6af985e6722.jpg",
+category:"TV-Shows",
+sub_category:"Zee TV Shows"},
+{id:10,title:"Riston Ka Manjha",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3522/portrait/1920x7708e597115cbe34523a60336c0eb541c57.jpg",
+category:"TV-Shows",
+sub_category:"Zee TV Shows"},
+{id:10,title:"Riston Ka Manjha",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3522/portrait/1920x7708e597115cbe34523a60336c0eb541c57.jpg",
+category:"TV-Shows",
+sub_category:"Zee TV Shows"},
+{id:1,title:"Meet",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3510/portrait/1920x7707d4b3b50908043d0b5a3087c802ad17d.jpg",
+category:"TV-Shows",
+sub_category:"Zee TV Shows"},
+
+{id:11,title:"Nayan… Jo Vekhe Unvekha",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z553645/portrait/1920x770176f42e22d424862b2c0ecb47799c3ee.jpg",
+category:"TV-Shows",
+sub_category:"Zee Punjabi Shows"},
+{id:12,title:"Dil Diyan Gallan Season 2",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5238421/portrait/1920x770089071dc08054d8cbb3214be6111720d.jpg",
+category:"TV-Shows",
+sub_category:"Zee Punjabi Shows"},
+{id:13,title:"Geet Dholi",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3519/portrait/1920x7708ebe07d337e64893864a4ba0f504a0dcbd06f7d50d4147b9af7c2ed5057f96de.jpg",
+category:"TV-Shows",
+sub_category:"Zee Punjabi Shows"},
+{id:14,title:"Sanjha Sufna",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5219605/portrait/1920x7700843aa4e01934bf8b4eb4fa15201af68.jpg",
+category:"TV-Shows",
+sub_category:"Zee Punjabi Shows"},
+{id:15,title:"Dheeyan Meriyan",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5133879/portrait/1920x770bd1ea8334e3e480083f901782b397927.jpg",
+category:"TV-Shows",
+sub_category:"Zee Punjabi Shows"},
+{id:16,title:"Chhoti Jhatni",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3324/portrait/1920x770a5c34270012f447ea349d61678031224.jpg",
+category:"TV-Shows",
+sub_category:"Zee Punjabi Shows"},
+{id:17,title:"Swaad Aa Gya 2",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z557989/portrait/1920x7702404b58f6edc4b50870437b434adea48.jpg",
+category:"TV-Shows",
+sub_category:"Zee Punjabi Shows"},
+{id:18,title:"Khasma Nu khani",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-2410/portrait/1920x7709240d0782c6d4751869d1b6a6bd47c13.jpg",
+category:"TV-Shows",
+sub_category:"Zee Punjabi Shows"},
+{id:19,title:"Pollywood Gupshup",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5200679/portrait/1920x7700a76725faf774232a5336aafc641687b.jpg",
+category:"TV-Shows",
+sub_category:"Zee Punjabi Shows"},
+{id:20,title:"Dil Diyan GAllan",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3154/portrait/1920x770a49f022eee41446dbdec65dbd5cd8a0a.jpg",
+category:"TV-Shows",
+sub_category:"Zee Punjabi Shows"}]
+
+ //---Trending Web Series---//
+let trendingweb=[{title:"Sunflower",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3284/portrait/1920x770ffd5406dde2541ddb0a0d4dcc57ee834.jpg",
+category:"Must Watch Web Series"},
+{title:"Jeet Ki Zid",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-2955/portrait/1920x7702bde888e01a54a1688ff0a84809a657aef9692fca19245ee980762d8461cfb17.jpg",
+category:"Must Watch Web Series"},
+{title:"Code M",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-2395/portrait/062395incover18856015811885d96e4480c15e457f8b0b4c30a5883775.jpg",
+category:"Must Watch Web Series"},
+{title:"Duranga",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5193948/portrait/1920x7704ba850de7a8a410cb16fa2d7468d3e77.jpg",
+category:"Must Watch Web Series"},
+{title:"The Final Call",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-1290/portrait/061290incover.jpg",
+category:"Must Watch Web Series"},
+{title:"Kaafir",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-1741/portrait/061741incover.jpg",
+category:"Must Watch Web Series"},
+{title:"Abhay",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-1298/portrait/1920x770d9ead07e5b304a989d85cf8c6e0113fb.jpg",
+category:"Must Watch Web Series"},
+{title:"Naxalbari",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-2923/portrait/1920x77088034308288034308265e8c0753ce34a6ebedc2dbf823a90ed.jpg",
+category:"Must Watch Web Series"},
+{title:"Mum Bhai",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3051/portrait/1920x770in1063538472.jpg",
+category:"Must Watch Web Series"},
+{title:"Fittrat",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-2161/portrait/062161incover.jpg",
+category:"Must Watch Web Series"},
+
+
+{title:"Tripling - Season 3",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5230436/portrait/1920x770cd5550fd6fe64ed19f73339697501913a1ebe2567d824021883c08f193544046.jpg",
+category:"Top 10 Web Series"},
+{title:"Rangbaaz",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5173774/portrait/1920x7706e8d8d70922c434c94dd09c14ccc5d5b.jpg",
+category:"Top 10 Web Series"},
+{title:"Duranga",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5193948/portrait/1920x7704ba850de7a8a410cb16fa2d7468d3e77.jpg",
+category:"Top 10 Web Series"},
+{title:"Hello World",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5192239/portrait/1920x770a78be5fdc4ef469fa04a1dbeaa702c2e.jpg",
+category:"Top 10 Web Series"},
+{title:"Lalbazaar",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-2176/portrait/1920x770b9b395ce22814c99b8217672c0e7deb7.jpg",
+category:"Top 10 Web Series"},
+{title:"The Broken News",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5145215/portrait/1920x770abf42130d9cf41dab2bf9e648cf3193b4100d873cc6547a8a4a4c92739160b3f.jpg",
+category:"Top 10 Web Series"},
+{title:"Abhay",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-1298/portrait/1920x770d9ead07e5b304a989d85cf8c6e0113fb.jpg",
+category:"Top 10 Web Series"},
+{title:"Saas Bahu Achaar Pvt. Ltd.",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5172356/portrait/1920x7709584469c57ec4547935b629b11da8504.jpg",
+category:"Top 10 Web Series"},
+{title:"Vilangu",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z587336/portrait/1920x770c5b0c7fe502948ca99a1853c913b0e876525aa775a3b43cabd9eb35f73439b5e.jpg",
+category:"Top 10 Web Series"},
+{title:"Rangbaaz",
+image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-1138/portrait/1920x7702d7ab4cfdf4c4ce5b0eaf5729107e1b0.jpg",
+category:"Top 10 Web Series"}]
+
+var allData=[...home,...latest,...top10,...tvshowshome,...trendingweb]
+localStorage.setItem("allData",JSON.stringify(allData))
+function search(){
+    var q=document.querySelector("input").value;
+    var filter=allData.filter(function(el){
+        return el.title.toLowerCase()==q.toLowerCase()
+        
+    })   
+    
+    displayimage(filter);
+}
+function displayimage(filter){
+    document.querySelector("#innercontainer").innerHTML="";       
+    filter.forEach(element => {
+    let div=document.createElement("div");
+    div.setAttribute("class","imagebox")
+    let imageProd=document.createElement("img");
+    imageProd.setAttribute("src",element.image)
+    imageProd.setAttribute("class","searchimage")
+    div.append(imageProd);
+    document.querySelector("#innercontainer").append(div);
+    });
+    }
 
 
 
@@ -215,7 +394,7 @@ let x=home_slide.length;
                 i=0;
             }
             display(home_slide)
-        },2000)
+        },4000)
         document.querySelector("#prev").addEventListener("click",()=>{
             i--;
             if(i<0){
@@ -232,25 +411,73 @@ let x=home_slide.length;
         })
 
 
-        displayRow(home);
-        function displayRow(home){
-
-            home.forEach(element => {
-            console.log(element.title)
+        displayhome(home);
+        function displayhome(home){
+           home.forEach(element => {
             let div=document.createElement("div");
+            div.setAttribute("class","swiper-slide")
             let image=document.createElement("img");
             image.setAttribute("src",element.image)
             div.append(image);
             document.querySelector(".inbox").append(div);
                 
             });
-            
-            
         }
 
+        displaylatest(latest);
+        function displaylatest(latest){
+           latest.forEach(element => {
+            let div=document.createElement("div");
+            div.setAttribute("class","swiper-slide")
+            let image=document.createElement("img");
+            image.setAttribute("src",element.image)
+            div.append(image);
+            document.querySelector(".inbox2").append(div);
+                
+            });
+        }
+ 
 
+        displaytop10(top10);
+        function displaytop10(top10){
+            top10.forEach(element => {
+            let div=document.createElement("div");
+            div.setAttribute("class","swiper-slide")
+            let image=document.createElement("img");
+            image.setAttribute("src",element.image)
+            div.append(image);
+            document.querySelector(".inbox3").append(div);
+                
+            });
+        }
 
+        
+        displaytvshowshome(tvshowshome);
+        function displaytvshowshome(tvshowshome){
+            tvshowshome.forEach(element => {
+            let div=document.createElement("div");
+            div.setAttribute("class","swiper-slide")
+            let image=document.createElement("img");
+            image.setAttribute("src",element.image)
+            div.append(image);
+            document.querySelector(".inbox4").append(div);
+                
+            });
+        }
 
+        
+        displaytrendingweb(trendingweb);
+        function displaytrendingweb(trendingweb){
+            trendingweb.forEach(element => {
+            let div=document.createElement("div");
+            div.setAttribute("class","swiper-slide")
+            let image=document.createElement("img");
+            image.setAttribute("src",element.image)
+            div.append(image);
+            document.querySelector(".inbox5").append(div);
+                
+            });
+        }
 
 
 

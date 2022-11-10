@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
+        <!-- Swipper CSS -->
+        <link rel="stylesheet" href="F:\megashows\can-water-5067\CSS\swiper-bundle.min.css">
     <style>
         #container{
             background-color: rgb(2, 2, 24);
             height: 100%;
+            margin-left: -10px;
+            margin-right: -10px;
             
         }
         #container>#navbar{
@@ -123,19 +127,19 @@
         font-weight: bold;
         font-size: 25px;
         }
-        #box1{
+        .box{
             width: 90%;
             margin: auto;
             padding-top: 40px;
         }
-        #box1>.inbox{
-            display: grid;
-            grid-template-columns: repeat(6,1fr);
-            grid-template-rows: auto;
-            gap: 20px;
-        }
-        .inbox>div>img{
-            width: 100%;
+ 
+        .inbox{
+            height: auto;
+             width: 100%; 
+           } 
+
+        .swiper-slide>img{
+            
             border-radius: 10px;
         }
         .heading{
@@ -151,6 +155,31 @@
             text-decoration: none;
         }
 
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .imagebox{
+        padding-top: 100px;
+        padding-bottom:400px;
+        padding-left: 100px;
+        height: 300px;
+        width: 200px;
+
+      }
+      .searchimage{
+        width: 100%;
+        border-radius: 10px;
+      }
+      #loginbtn{
+        text-decoration: none;
+        color: white;
+      }
+      #loginbtn:hover{
+        color:rgb(2, 2, 24);
+      }
 
 
     </style>
@@ -162,15 +191,15 @@
             <div id="left">
                 
                 <a id="home" href="home.html">Home</a>
-                <a id="tv_shows" href="">TV Shows</a>
+                <a id="tv_shows" href="tvshows.html">TV Shows</a>
                 <a id ="movies" href="">Movies</a>
                 <a id="web_series" href="">Web Series</a>
                 <a id="news" href="">News</a>
             </div>
             <div id="right">
-                <input id="search" type="text" placeholder="&#x1F50D Search for Movies, Shows, Channels etc.">
+                <input id="search" onChange="search()" type="text" placeholder="&#x1F50D Search for Movies, Shows, Channels etc.">
                 <button id="language">A</button>
-                <button id="login">LOGIN</button>
+                <button id="login"><a id="loginbtn" href="F:\megashows\can-water-5067\login.html">LOGIN</a> </button>
                 <button id="plans">BUY PLAN</button>
                 <select name="" id="selectoptions">
                     <option value="">≡</option>
@@ -183,25 +212,92 @@
 
             </div>
         </div>
-             <div id="home_slide"></div>
-             <div id="btn">
-               <h1 id="prev">&#10094;</h1>
-               <h1 id="nxt">&#10095;</h1>
-             </div>
+        <div id="innercontainer">
+            <div id="home_slide"></div>
+            <div id="btn">
+              <h1 id="prev">&#10094;</h1>
+              <h1 id="nxt">&#10095;</h1>
+            </div>
+              <!-- 1st row sliding -->
+            <div class="box">
+               <div class="heading">
+                   <h2 >Trending Near You</h2>
+                   <a href="">More &#10095;</a>
+               </div>
+               <div class="outinbox swiper">
+                       <div class="inbox swiper-wrapper"></div>           
+                   <div class="swiper-button-next"></div>
+                   <div class="swiper-button-prev"></div>
+                   <div class="swiper-pagination"></div>
+               </div>
+            </div>
 
-             <div id="box1">
-                <div class="heading">
-                    <h2 >Trending Near You</h2>
-                    <a href="">More &#10095;</a>
-                </div>
-                <div class="inbox"></div>
-             </div>
+            <!-- 2nd row sliding -->
+            <div class="box">
+               <div class="heading">
+                   <h2 >Latest And Trending</h2>
+                   <a href="">More &#10095;</a>
+               </div>
+               <div class="outinbox swiper">
+                   <div class="inbox2 swiper-wrapper"></div>
+                   <div class="swiper-button-next"></div>
+                   <div class="swiper-button-prev"></div>
+                   <div class="swiper-pagination"></div>
+               </div>
+            </div>
 
+             <!-- 3rd row sliding -->
+             <div class="box">
+               <div class="heading">
+                   <h2 >Latest And Trending</h2>
+                   <a href="">More &#10095;</a>
+               </div>
+               <div class="outinbox swiper">
+                   <div class="inbox3 swiper-wrapper"></div>
+                   <div class="swiper-button-next"></div>
+                   <div class="swiper-button-prev"></div>
+                   <div class="swiper-pagination"></div>
+               </div>
+            </div>
+
+             <!-- 4th row sliding -->
+             <div class="box">
+               <div class="heading">
+                   <h2 >Latest TV Shows</h2>
+                   <a href="">More &#10095;</a>
+               </div>
+               <div class="outinbox swiper">
+                   <div class="inbox4 swiper-wrapper"></div>
+                   <div class="swiper-button-next"></div>
+                   <div class="swiper-button-prev"></div>
+                   <div class="swiper-pagination"></div>
+               </div>
+            </div>
+            <!-- 5th row sliding -->
+            <div class="box">
+               <div class="heading">
+                   <h2 >Trending Web Series</h2>
+                   <a href="">More &#10095;</a>
+               </div>
+               <div class="outinbox swiper">
+                   <div class="inbox5 swiper-wrapper"></div>
+                   <div class="swiper-button-next"></div>
+                   <div class="swiper-button-prev"></div>
+                   <div class="swiper-pagination"></div>
+               </div>
+            </div>
+
+
+
+              
+        </div>
 
     </div>
     
 </body>
 </html>
-<script src="C:\Users\Acer\Desktop\can-water-5067\index js\home.js">
+<script src="F:\megashows\can-water-5067\index js\home.js"></script>
+    <!-- Swipper JS -->
+<script src="F:\megashows\can-water-5067\index js\swiper-bundle.min.js"></script>
      
-</script>
+<script src="F:\megashows\can-water-5067\index js\swiper.js"></script>

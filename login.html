@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaShows LOGIN</title>
+    <style>
+        *{
+            background-color: rgb(13, 13, 31);
+            color: white;
+            margin-top: 30px;
+        }
+      #container{
+        width: 50%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        margin-top:30px ;
+      }
+      #image{
+        display: flex;
+        justify-content: center;
+       }
+       img{
+        margin-left: 15px;
+
+       }
+       input{
+        width: 50%;
+        height: 50px;
+        border: 1px solid white;
+        border-radius: 5px;
+       }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h3>Login to MegaShows</h3>
+        <p>Login to continue enjoying uninterrupted video and <br> personalised experience.</p>
+        </div>
+        <div >
+            <div id="image">
+                <img src="https://www.zee5.com/images/apple-social-icon-circle.svg?ver=2.52.50" alt="">
+                <img src="https://www.zee5.com/images/google-social-icon-circle.svg?ver=2.52.50" alt="">
+                <img src="https://www.zee5.com/images/fb-social-icon-circle.svg?ver=2.52.50" alt="">
+                <img src="https://www.zee5.com/images/twitter-social-icon.svg?ver=2.52.50" alt="">
+            </div>
+            <form>
+                 <p>or</p>
+                <input id="email" type="number" placeholder="Mobile Number" required><br>
+                <p style="color: purple;">Forget Password?</p>
+                <input type="submit" value="Login" > <br>
+                 <p>New to ZEE5 ? <a style="color: purple;text-decoration: none; " href="F:\megashows\can-water-5067\Signup.html">Register</a></p>
+                    
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",myFunction)
+let array=JSON.parse(localStorage.getItem("data"))
+function myFunction(event){
+    event.preventDefault()
+    
+    let loginNumber=document.querySelector("#email").value;
+    let flag=false;
+ for(let i=0;i<array.length;i++){
+    if(array[i]===loginNumber){
+        flag=true;
+    }
+  
+}
+if(flag==true){
+        alert("login successful")
+    }else{
+        alert("Wrong Credentials")
+    } 
+
+}
+
+</script>

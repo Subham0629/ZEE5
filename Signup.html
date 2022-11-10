@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaShows SIGNIN</title>
+    <style>
+        *{
+            background-color: rgb(13, 13, 31);
+            color: white;
+            margin-top: 30px;
+        }
+      #container{
+        width: 50%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        margin-top:30px ;
+      }
+
+       input{
+        width: 50%;
+        height: 50px;
+        border: 1px solid white;
+        border-radius: 5px;
+       }
+       #button{
+        width: 50%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        
+        background-color: white;
+        margin: auto;
+        border-radius: 5px;
+       }
+       #button>img{
+        height: 60%;
+        margin:auto ;
+       }
+
+       
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="head">
+            <h3>Create a new account</h3>
+        <p>Create an account to continue enjoying <br> uninterrupted video and personalised <br> experience</p>
+        </div>
+        <div id="submitform">
+            <div id="button">
+                <img style="border-radius: 50%;" src="https://www.zee5.com/images/google-social-icon-circle.svg?ver=2.52.50" alt="">
+                <p style="color: purple; background-color: white;">Sign In</p>
+            </div>
+            
+            <form>
+                 <p>or</p>
+                <input id="number" type="number" placeholder="Mobile Number" min="1000000000" max="9999999999" required><br>
+                <p >By proceeding you agree to our Terms of Services & <br> Privacy Policy.</p>
+                <input type="submit" value="Send OTP" > <br>
+                 <p>Already registered? <a style="color: purple;text-decoration: none; " href="F:\megashows\can-water-5067\login.html">Login</a></p>
+                    
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",myFun)
+let arr=JSON.parse(localStorage.getItem("data")) || [];
+function myFun(){
+    let user=document.querySelector("#number").value;
+    arr.push(user);        
+    localStorage.setItem("data",JSON.stringify(arr));
+    alert("Signup Successfull")
+}
+</script>
