@@ -1,0 +1,229 @@
+#container{
+    background-color: rgb(2, 2, 24);
+    height: auto;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-bottom: 50px;
+    
+}
+#container>#navbar{
+    display: flex;
+    justify-content: space-around;
+    height: 90px;
+    position:fixed;
+    background-color: rgb(2, 2, 24);
+    width: 100%;
+    margin-top: -10px;
+    z-index: 39;
+}
+#container>#navbar>#left{
+  padding-top: 30px;   
+  padding-right: 100px;      
+}
+#container>#navbar>#right{
+  padding-top: 20px;  
+  padding-right: 40px;        
+}
+#container>#navbar>div>a{
+    margin-left: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+#container>#navbar>div>button{
+    margin-left: 15px;
+    padding: 12px;
+    cursor: pointer;
+}
+#container>#navbar>div>#search{
+    height: 35px;
+    width: 280px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color:  rgb(2, 2, 24);
+    color: white;
+}
+#container>#navbar>div>#language{
+    border-radius: 50%;
+    background-color:  rgb(2, 2, 24);
+    border: 0px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#container>#navbar>div>#language:hover{
+    background-color: rgb(12, 12, 104);
+}
+#container>#navbar>div>#loginbtn>#login{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color:  rgb(2, 2, 24);
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    height: 37px;
+}
+#container>#navbar>div>#loginbtn>#login:hover{
+    background-color: white;
+    color: rgb(9, 9, 82);
+}
+#container>#navbar>div>#plans{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color:purple;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+}
+#container>#navbar>div>#plans:hover{
+    background-color: white;
+    background-color:rgb(105, 1, 105);
+}
+#right>select{
+    cursor: pointer;
+margin-left: 10px;
+width: 30px;
+}
+
+#home_slide{
+    cursor: pointer;
+    height: 400px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+#home_slide>img{
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+
+}
+#prev{
+cursor: pointer;
+position: absolute;
+margin-left: 50px;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 25px;
+}
+#nxt{
+cursor: pointer;
+position: absolute;
+margin-left: 1250px;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 25px;
+}
+.box{
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.inbox{    
+    height: auto;
+     width: 100%; 
+   }
+.swiper-slide>img{
+    cursor: pointer;
+    border-radius: 10px;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+.heading>h2{
+    color: white;
+}
+.heading>a{
+    padding-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.imagebox{
+padding-top: 100px;
+padding-bottom:400px;
+padding-left: 100px;
+height: 300px;
+width: 200px;
+
+}
+.searchimage{
+width: 100%;
+border-radius: 10px;
+}
+#loginbtn{
+text-decoration: none;
+color: white;
+}
+#loginbtn:hover{
+color:rgb(2, 2, 24);
+}
+/* Footer CSS */
+#footer{  
+ height: 500px;
+ width: 90%;
+ margin: auto;
+ color: wheat;
+}
+#footer>#topf{
+ height: 150px;
+ display: flex;
+ justify-content: space-between;
+}
+#footer>#topf>div{
+ display: flex;
+ align-items: center;
+}
+#sociallogo>img{
+    border-radius: 50%;
+    height: 25%;
+    margin-left: 10px;
+}
+#applogo>img{
+    margin-left: 10px;
+    height: 25%;
+}
+#footer>#mid1{
+ height: auto;
+}
+#footer>#mid2{   
+display: flex;
+justify-content: space-between;
+height: auto;
+margin-top: 40px;
+}
+
+#mid2>div>p{
+   color:palevioletred;
+   font-size: 14px;
+}
+#footer>#bottomf{ 
+ height: auto;
+}
+#footer>#bottomf>p{
+    color: purple;
+    padding-top: 60px;
+    font-size: 12px;
+}
+.dropdown>.dropdown-menu{
+    width: 50px;
+
+}
