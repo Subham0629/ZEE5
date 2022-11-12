@@ -5,16 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MegaMovies Home</title>
-        <!-- Swipper CSS -->
-        <link rel="stylesheet" href="F:\megashows\can-water-5067\CSS\swiper-bundle.min.css">
-        <link rel="stylesheet" href="F:\megashows\can-water-5067\CSS\home.css">
+    <title>Trending</title>
 
+<link rel="stylesheet" href="F:\megashows\can-water-5067\CSS\home.css">
+<style>
+    #morecontainer{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+     
+
+
+    }
+    #morecontainer>div>img{
+        width: 100%;
+        border-radius: 10px;
+      
+    }
+</style>
    
 </head>
 <body>
-    <div id="container">
-        <div id="navbar">
+    <div  id="container">
+        <div style="margin-top: -22px;" id="navbar">
             <img style="height: 50% ;padding-top: 20px;" width="5%" id="logo" src="C:\Users\Acer\Desktop\can-water-5067\logo\can-water-5067.jpg" alt="">
             <div id="left">
                 
@@ -47,82 +63,9 @@
 
             </div>
         </div>
-        <div id="innercontainer">
-            <div id="home_slide"></div>
-            <div id="btn">
-              <h1 id="prev">&#10094;</h1>
-              <h1 id="nxt">&#10095;</h1>
-            </div>
-              <!-- 1st row sliding -->
-            <div class="box">
-               <div class="heading">
-                   <h2 >Trending Near You</h2>
-                   <a href="F:\megashows\can-water-5067\trendingmore.html">More &#10095;</a>
-               </div>
-               <div class="outinbox swiper">
-                       <div class="inbox swiper-wrapper"></div>           
-                   <div class="swiper-button-next"></div>
-                   <div class="swiper-button-prev"></div>
-                   <div class="swiper-pagination"></div>
-               </div>
-            </div>
-
-            <!-- 2nd row sliding -->
-            <div class="box">
-               <div class="heading">
-                   <h2 >Latest And Trending</h2>
-                   <a href="">More &#10095;</a>
-               </div>
-               <div class="outinbox swiper">
-                   <div class="inbox2 swiper-wrapper"></div>
-                   <div class="swiper-button-next"></div>
-                   <div class="swiper-button-prev"></div>
-                   <div class="swiper-pagination"></div>
-               </div>
-            </div>
-
-             <!-- 3rd row sliding -->
-             <div class="box">
-               <div class="heading">
-                   <h2 >Latest And Trending</h2>
-                   <a href="">More &#10095;</a>
-               </div>
-               <div class="outinbox swiper">
-                   <div class="inbox3 swiper-wrapper"></div>
-                   <div class="swiper-button-next"></div>
-                   <div class="swiper-button-prev"></div>
-                   <div class="swiper-pagination"></div>
-               </div>
-            </div>
-
-             <!-- 4th row sliding -->
-             <div class="box">
-               <div class="heading">
-                   <h2 >Latest TV Shows</h2>
-                   <a href="">More &#10095;</a>
-               </div>
-               <div class="outinbox swiper">
-                   <div class="inbox4 swiper-wrapper"></div>
-                   <div class="swiper-button-next"></div>
-                   <div class="swiper-button-prev"></div>
-                   <div class="swiper-pagination"></div>
-               </div>
-            </div>
-            <!-- 5th row sliding -->
-            <div class="box">
-               <div class="heading">
-                   <h2 >Trending Web Series</h2>
-                   <a href="">More &#10095;</a>
-               </div>
-               <div class="outinbox swiper">
-                   <div class="inbox5 swiper-wrapper"></div>
-                   <div class="swiper-button-next"></div>
-                   <div class="swiper-button-prev"></div>
-                   <div class="swiper-pagination"></div>
-               </div>
-            </div>
-
-
+        <h2 style="color: white; padding-top: 100px;padding-left: 70px;">Trending Near You</h2>
+        <div id="morecontainer">
+           
 
               
         </div>
@@ -206,8 +149,18 @@
 
 </body>
 </html>
-<script src="F:\megashows\can-water-5067\index js\home.js"></script>
-    <!-- Swipper JS -->
-<script src="F:\megashows\can-water-5067\index js\swiper-bundle.min.js"></script>
-     
-<script src="F:\megashows\can-water-5067\index js\swiper.js"></script>
+<script>
+    let store=JSON.parse(localStorage.getItem("Trending"))
+console.log("store")
+displayimages(store)
+function displayimages(store){
+    document.querySelector("#morecontainer").innerHTML="";       
+    store.forEach(element => {
+    let div=document.createElement("div");
+    let imageProd=document.createElement("img");
+    imageProd.setAttribute("src",element.image)
+    div.append(imageProd);
+    document.querySelector("#morecontainer").append(div);
+    });
+    }
+</script>

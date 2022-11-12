@@ -70,6 +70,7 @@ time:"2h 7m",
 sub_category:"Action",
 type:"Thriller"}]
 
+
 //---Latest & Trending---//
 var latest=[{title:"Tripling Season 3",
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5230436/portrait/1920x770cd5550fd6fe64ed19f73339697501913a1ebe2567d824021883c08f193544046.jpg",
@@ -352,6 +353,7 @@ category:"Top 10 Web Series"}]
 
 var allData=[...home,...latest,...top10,...tvshowshome,...trendingweb]
 localStorage.setItem("allData",JSON.stringify(allData))
+localStorage.setItem("Trending",JSON.stringify(home))
 function search(){
     var q=document.querySelector("input").value;
     var filter=allData.filter(function(el){
