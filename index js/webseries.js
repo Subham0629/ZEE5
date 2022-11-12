@@ -214,4 +214,3 @@ let x=home_slide.length;
 
         
 
-=====
