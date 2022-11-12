@@ -1,4 +1,16 @@
-var movies=[{title:"Rashtra Kavach OM",
+
+var home_slide=["https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5227565/cover/1920x7704ce388d5a6e74dac8ad9255657da588f.jpg",
+"https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5233808/cover/1920x770e1e200eb2ab84c2bb678ee60e3dcf06b243111bceaad490a94d223a2872f5a7a.jpg",
+"https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5206274/cover/1920x770485283887ce04c66a91f3e5dc0e20747.jpg",
+"https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5191161/cover/1920x770bc4eccaecfc244d5abf81008d247152999b6f14eca0d474287fa92038b166e0d.jpg",
+"https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5246084/cover/1920x7706643570fad7d4b018eb8ee595ee8f66a.jpg",
+"https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5228525/cover/1920x7701789cd01c98a4b098ff87b399b61530c3e52cc15ff174f4689cc1ebefe5b40ff.jpg",
+"https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5246147/cover/1920x77061cfc501b93f489b971525bcc03d06c2.jpg"
+];
+
+
+var movies1=[{title:"Rashtra Kavach OM",
+
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5191648/portrait/1920x77015755573326f485eb9b2ad856c296abd.jpg",
 category:"Only On ZEE5",
 time:"2h 7m",
@@ -57,7 +69,10 @@ image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_au
 category:"Only On ZEE5",
 time:"2h 7m",
 sub_category:"Action",
-type:"Thriller"},
+
+type:"Thriller"}]
+var movies2=[
+
 
 {title:"Tripling Season 3",
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5230436/portrait/1920x770cd5550fd6fe64ed19f73339697501913a1ebe2567d824021883c08f193544046.jpg",
@@ -118,7 +133,9 @@ image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_au
 category:"Latest & Trending",
 time:"2h 7m",
 sub_category:"Action",
-type:"Thriller"},
+
+type:"Thriller"}]
+var movies3=[
 
 {title:"Love Hostel",
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z595840/portrait/1920x7705d9c7a86295d4f268cd4c7deb387d9b8.jpg",
@@ -180,4 +197,108 @@ category:"ZEE5 Original Blockbusters",
 time:"2h 7m",
 sub_category:"Action",
 type:"Thriller"}
+
 ]
+
+
+var allData=JSON.parse(localStorage.getItem("allData"))
+console.log(allData)
+function search(){
+    var q=document.querySelector("input").value;
+    var filter=allData.filter(function(el){
+        return el.title.toLowerCase()==q.toLowerCase()
+        
+    })   
+    
+    displayimage(filter);
+}
+function displayimage(filter){
+    document.querySelector("#innercontainer").innerHTML="";       
+    filter.forEach(element => {
+    let div=document.createElement("div");
+    div.setAttribute("class","imagebox")
+    let imageProd=document.createElement("img");
+    imageProd.setAttribute("src",element.image)
+    imageProd.setAttribute("class","searchimage")
+    div.append(imageProd);
+    document.querySelector("#innercontainer").append(div);
+    });
+    }
+
+
+
+let x=home_slide.length;
+    let i=0;
+    var z;
+    function display(home_slide){
+        document.querySelector("#home_slide").innerHTML="";
+        let image=document.createElement("img");
+        image.setAttribute("src",home_slide[i]);
+        document.querySelector("#home_slide").append(image)
+        
+    }
+    display(home_slide);
+        z= setInterval(()=>{
+            
+            i++;
+            if(i>x-1){
+                i=0;
+            }
+            display(home_slide)
+        },4000)
+        document.querySelector("#prev").addEventListener("click",()=>{
+            i--;
+            if(i<0){
+                i=x-1;
+            }
+            display(home_slide)
+        })
+        document.querySelector("#nxt").addEventListener("click",()=>{
+            i++;
+            if(i>x-1){
+                i=0;
+            }
+            display(home_slide)
+        })
+
+
+        displayhome(movies1);
+        function displayhome(movies1){
+            movies1.forEach(element => {
+            let div=document.createElement("div");
+            div.setAttribute("class","swiper-slide")
+            let image=document.createElement("img");
+            image.setAttribute("src",element.image)
+            div.append(image);
+            document.querySelector(".inbox").append(div);
+                
+            });
+        }
+
+        displaylatest(movies2);
+        function displaylatest(movies2){
+            movies2.forEach(element => {
+            let div=document.createElement("div");
+            div.setAttribute("class","swiper-slide")
+            let image=document.createElement("img");
+            image.setAttribute("src",element.image)
+            div.append(image);
+            document.querySelector(".inbox2").append(div);
+                
+            });
+        }
+ 
+
+        displaytop10(movies3);
+        function displaytop10(movies3){
+            movies3.forEach(element => {
+            let div=document.createElement("div");
+            div.setAttribute("class","swiper-slide")
+            let image=document.createElement("img");
+            image.setAttribute("src",element.image)
+            div.append(image);
+            document.querySelector(".inbox3").append(div);
+                
+            });
+        }
+
