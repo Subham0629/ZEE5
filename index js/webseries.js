@@ -1,3 +1,4 @@
+
 var home_slide=["https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5227565/cover/1920x7704ce388d5a6e74dac8ad9255657da588f.jpg",
 "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5233808/cover/1920x770e1e200eb2ab84c2bb678ee60e3dcf06b243111bceaad490a94d223a2872f5a7a.jpg",
 "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5206274/cover/1920x770485283887ce04c66a91f3e5dc0e20747.jpg",
@@ -8,6 +9,7 @@ var home_slide=["https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,
 ];
 
 let webseries1=[{title:"Sunflower",
+
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3284/portrait/1920x770ffd5406dde2541ddb0a0d4dcc57ee834.jpg",
 category:"Must Watch Web Series"},
 {title:"Jeet Ki Zid",
@@ -36,9 +38,11 @@ image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_au
 category:"Must Watch Web Series"},
 {title:"Fittrat",
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-2161/portrait/062161incover.jpg",
+
 category:"Must Watch Web Series"}]
 
 let webseries2=[
+
 {title:"Tripling - Season 3",
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5230436/portrait/1920x770cd5550fd6fe64ed19f73339697501913a1ebe2567d824021883c08f193544046.jpg",
 category:"Top 10 Web Series"},
@@ -68,9 +72,11 @@ image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_au
 category:"Top 10 Web Series"},
 {title:"Rangbaaz",
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-1138/portrait/1920x7702d7ab4cfdf4c4ce5b0eaf5729107e1b0.jpg",
+
 category:"Top 10 Web Series"}]
 
 let webseries3=[
+
 {title:"Ek Anokha Pyaar",
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5238257/portrait/1920x7701aa804151cfa4b6cb94d3afc8035de2c.jpg",
 category:"Spark | Free Web Series"},
@@ -101,6 +107,7 @@ category:"Spark | Free Web Series"},
 {title:"Mom & Co.",
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z597457/portrait/1920x770b05e6f08c2d04ef2b43754d82be6d2d6.jpg",
 category:"Spark | Free Web Series"}
+
 ]
 
 
@@ -206,3 +213,5 @@ let x=home_slide.length;
         }
 
         
+
+=====

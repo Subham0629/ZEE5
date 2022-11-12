@@ -1,3 +1,4 @@
+
 var home_slide=["https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5227565/cover/1920x7704ce388d5a6e74dac8ad9255657da588f.jpg",
 "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5233808/cover/1920x770e1e200eb2ab84c2bb678ee60e3dcf06b243111bceaad490a94d223a2872f5a7a.jpg",
 "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5206274/cover/1920x770485283887ce04c66a91f3e5dc0e20747.jpg",
@@ -6,6 +7,7 @@ var home_slide=["https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,
 "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5228525/cover/1920x7701789cd01c98a4b098ff87b399b61530c3e52cc15ff174f4689cc1ebefe5b40ff.jpg",
 "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5246147/cover/1920x77061cfc501b93f489b971525bcc03d06c2.jpg"
 ];
+
 
 let news=[{title:"Zee News",
 image:"https://akamaividz2.zee5.com/image/upload/w_223,h_125,c_scale,f_webp,q_auto:eco/resources/0-9-zeenews/channel_list/zeenews1170f2ce73fb97a048d494b94baf12db0efa.png",
@@ -37,6 +39,7 @@ category:"All Channels"},
 {title:"DD India",
 image:"https://akamaividz2.zee5.com/image/upload/w_382,h_215,c_scale,f_webp,q_auto:eco/resources/0-9-ddindia/list/ddindiab1170f889db27123a438db1174cc576e117e9.jpg",
 category:"All Channels"},
+
 ]
 
 
@@ -113,3 +116,4 @@ let x=home_slide.length;
                 
             });
         }
+

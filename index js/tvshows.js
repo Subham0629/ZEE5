@@ -1,3 +1,4 @@
+
 var home_slide=["https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5227565/cover/1920x7704ce388d5a6e74dac8ad9255657da588f.jpg",
 "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5233808/cover/1920x770e1e200eb2ab84c2bb678ee60e3dcf06b243111bceaad490a94d223a2872f5a7a.jpg",
 "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5206274/cover/1920x770485283887ce04c66a91f3e5dc0e20747.jpg",
@@ -9,6 +10,7 @@ var home_slide=["https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,
 
 
 var tvshows1=[{id:1,title:"Meet",
+
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3510/portrait/1920x7707d4b3b50908043d0b5a3087c802ad17d.jpg",
 category:"TV-Shows",
 sub_category:"Zee TV Shows"},
@@ -55,9 +57,11 @@ sub_category:"Zee TV Shows"},
 {id:1,title:"Meet",
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3510/portrait/1920x7707d4b3b50908043d0b5a3087c802ad17d.jpg",
 category:"TV-Shows",
+
 sub_category:"Zee TV Shows"}]
 
 var tvshows2=[
+
 {id:11,title:"Nayan… Jo Vekhe Unvekha",
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z553645/portrait/1920x770176f42e22d424862b2c0ecb47799c3ee.jpg",
 category:"TV-Shows",
@@ -97,8 +101,10 @@ sub_category:"Zee Punjabi Shows"},
 {id:20,title:"Dil Diyan GAllan",
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3154/portrait/1920x770a49f022eee41446dbdec65dbd5cd8a0a.jpg",
 category:"TV-Shows",
+
 sub_category:"Zee Punjabi Shows"}]
 var tvshows3=[
+
 {id:21,title:"Pyaar Tune Kya Kiya - Season 13",
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5238498/portrait/1920x7702c94a24cdc6b46198435dd9b40860e44.jpg",
 category:"TV-Shows",
@@ -140,6 +146,7 @@ image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_au
 category:"TV-Shows",
 sub_category:"Popular Free Shows on ZEE5"},
 ]
+
 
 
 
@@ -245,4 +252,4 @@ let x=home_slide.length;
         }
 
         
-       
+

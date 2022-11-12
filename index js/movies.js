@@ -1,3 +1,4 @@
+
 var home_slide=["https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5227565/cover/1920x7704ce388d5a6e74dac8ad9255657da588f.jpg",
 "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5233808/cover/1920x770e1e200eb2ab84c2bb678ee60e3dcf06b243111bceaad490a94d223a2872f5a7a.jpg",
 "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5206274/cover/1920x770485283887ce04c66a91f3e5dc0e20747.jpg",
@@ -9,6 +10,7 @@ var home_slide=["https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,
 
 
 var movies1=[{title:"Rashtra Kavach OM",
+
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5191648/portrait/1920x77015755573326f485eb9b2ad856c296abd.jpg",
 category:"Only On ZEE5",
 time:"2h 7m",
@@ -67,8 +69,10 @@ image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_au
 category:"Only On ZEE5",
 time:"2h 7m",
 sub_category:"Action",
+
 type:"Thriller"}]
 var movies2=[
+
 
 {title:"Tripling Season 3",
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5230436/portrait/1920x770cd5550fd6fe64ed19f73339697501913a1ebe2567d824021883c08f193544046.jpg",
@@ -129,8 +133,10 @@ image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_au
 category:"Latest & Trending",
 time:"2h 7m",
 sub_category:"Action",
+
 type:"Thriller"}]
 var movies3=[
+
 {title:"Love Hostel",
 image:"https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z595840/portrait/1920x7705d9c7a86295d4f268cd4c7deb387d9b8.jpg",
 category:"ZEE5 Original Blockbusters",
@@ -191,6 +197,7 @@ category:"ZEE5 Original Blockbusters",
 time:"2h 7m",
 sub_category:"Action",
 type:"Thriller"}
+
 ]
 
 
@@ -294,3 +301,4 @@ let x=home_slide.length;
                 
             });
         }
+
